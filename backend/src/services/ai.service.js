@@ -1,6 +1,8 @@
+import dotenv from "dotenv";
+dotenv.config();
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_GEMINI_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_GEMINI_KEY});
 
 async function main(code, language) {
   const instruction = `You are a senior AI code reviewer. Follow these EXACT instructions:
