@@ -36,7 +36,6 @@ An AI-powered code review application that analyzes your code for runtime errors
 Before running the project, create a `.env` file in the root directory and add the following:
 
 ```env
-MONGODB_URI=your_mongodb_connection_string
 GOOGLE_GEMINI_KEY=your_google_gemini_key
 PORT=3000
 NODE_ENV=development
